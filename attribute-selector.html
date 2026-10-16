@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+</head>
+<style>
+    a[target=_self] {
+        color: red;
+    }
+    p[title~="belajar"] {
+        color: red;
+    }
+    p[title|="kelas"] {
+        color: blue;
+    }
+    p[title^="bahasa"] {
+        color: orange;
+    }
+    p[title$="pelajar"] {
+        color: blue;
+    }
+    [title*="pemula"] {
+        color: red;
+    }
+</style>
+<body>
+    <a href="https://google.com" target="_blank">Google</a> <br>
+    <a href="https://youtube.com">Youtube</a> <br>
+    <a href="https://github.com" target="_self">Github</a> <br>
+    <hr>
+    <p title="belajar html">Belajar HTML</p>
+    <p title="belajar-css">Belajar CSS</p>
+    <p title="kesimpulan">kesimpulan</p>
+    <hr>
+    <p title="kelas-berat">Ekonomi Properti</p>
+    <p title="kelas ringan">Manajemen Keungan</p>
+    <p title="mudah">Ekonomi</p>
+    <hr>
+    <p title="bahasa pemrograman">JavaScript</p>
+    <p title="bahasa-pemrograman">Python</p>
+    <p title="pemrograman-bahasa">C++</p>
+    <p title="pemrograman bahasa">C#</p>
+    <hr>
+    <p title="harga-pelajar">Premium</p>
+    <p title="untuk pelajar">Super Premium</p>
+    <p title="pelajar ramah">Plus</p>
+    <hr>
+    <p title="ramah-pemula">Easy</p>
+    <p title="untuk pemula">Beginner</p>
+    <p title="pemula banget">Rookie</p>
+    <hr>
+    <p></p>
+</body>
+</html>
